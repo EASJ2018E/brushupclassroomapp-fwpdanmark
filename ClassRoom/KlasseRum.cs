@@ -17,5 +17,39 @@ namespace ClassRoom
         {
             
         }
+
+        public void counter()
+        {
+            int forår = 0;
+            int sommer = 0;
+            int efterår = 0;
+            int vinter = 0;
+
+            foreach (Studerende student in Klasseliste)
+            {
+                if (student.årstid() == "Forår")
+                {
+                    forår++;
+                }
+                else if (student.årstid() == "Sommer")
+                {
+                    sommer++;
+                }
+                else if (student.årstid() == "Efterår")
+                {
+                    efterår++;
+                }
+                else if (student.årstid() == "Vinter")
+                {
+                    vinter++;
+                }
+
+                
+            }
+            Console.WriteLine("Forår: " + forår);
+            Console.WriteLine("Sommer: " + sommer);
+            Console.WriteLine("Efterår: " + efterår);
+            Console.WriteLine("Vinter: " + vinter);
+        }
     }
 }

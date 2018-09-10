@@ -18,6 +18,18 @@ namespace ClassRoom
             klasse.Klasseliste.Add(new Studerende("Frederik",5,3));
             klasse.Klasseliste.Add(new Studerende("Jesper",11,2));
 
+            Console.WriteLine(klasse.KlasseNavn);
+            Console.WriteLine(klasse.SemesterStart);
+
+            foreach (Studerende student in klasse.Klasseliste)
+            {
+                Console.Write(student.Navn+" ");
+                Console.Write(student.fødselsdag+" ");
+                Console.WriteLine(student.fødselsmåned+" ");
+            }
+
+            klasse.counter();
+            Console.ReadKey();
 
         }
     }
