@@ -15,6 +15,8 @@ namespace ClassRoom
             klasse.Klasseliste = new List<Studerende>();
             klasse.SemesterStart = new DateTime(2018,9,4);
 
+            Studerende Lars = new Studerende("Lars",14,14);
+
             klasse.Klasseliste.Add(new Studerende("Frederik",5,3));
             klasse.Klasseliste.Add(new Studerende("Jesper",11,2));
 

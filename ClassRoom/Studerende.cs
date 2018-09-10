@@ -17,7 +17,15 @@ namespace ClassRoom
         public Studerende(string navn, int fødselsmåned, int fødselsdag)
         {
             Navn = navn;
-            this.fødselsmåned = fødselsmåned;
+            if (fødselsmåned > 1 && fødselsmåned < 13)
+            {
+                this.fødselsmåned = fødselsmåned;
+            }
+            else
+            {
+                Console.WriteLine(Navn +" kunne ikke oprette pga forket dato");
+            }
+            
             this.fødselsdag = fødselsdag;
         }
 
